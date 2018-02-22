@@ -11,6 +11,20 @@
         "id": 740
       }
     }
+  },  
+  {
+    "id": "NC",
+    "name": "Nature's Cure",
+    "tags": [ "druid", "restoration" ],
+    "show": true,
+    "showTarget": true,
+    "eventType": "ability",
+    "filter": {
+      "type": "dispel",
+      "ability": {
+        "id": 88423
+      }
+    }
   },
   
   {
@@ -26,8 +40,7 @@
         "id": 102342
       }
     }
-  },
-  
+  },  
   {
     "id": "WG",
     "name": "Wild Growth",
@@ -40,8 +53,7 @@
         "id": 48438
       }
     }
-  },
-  
+  },  
   {
     "id": "RG",
     "name": "Regrowth",
@@ -54,13 +66,13 @@
         "id": 8936
       }
     }
-  },
-  
+  },  
   {
     "id": "SM",
     "name": "Swiftmend",
     "tags": [ "druid", "restoration" ],
     "show": true,
+    "showTarget": true,
     "eventType": "ability",
     "filter": {
       "type": "cast",
@@ -68,13 +80,12 @@
         "id": 18562
       }
     }
-  },
-  
+  },  
   {
     "id": "CW",
     "name": "Cenarion Ward",
     "tags": [ "druid", "restoration" ],
-    "show": true,
+    "show": false,
     "showTarget": true,
     "eventType": "ability",
     "filter": {
@@ -84,23 +95,7 @@
       }
     }
   },
-
-{
-  "id": "IV",
-  "name": "Innervate",
-  "tags": [ "druid", "restoration" ],
-  "show": false,
-  "eventType": "debuff",
-  "friendly": true,
-  "filter": {
-    "type": "applybuff",
-    "ability": {
-      "id": 29166
-    }
-  }
-},
-
-{
+  {
   "id": "E1",
   "name": "Essence of G'Hanir",
   "tags": [ "druid", "restoration" ],
@@ -114,13 +109,12 @@
     }
   }
 },
-
 {
   "id": "E2",
-  "name": "Essence of G'Hanir",
+  "name": "Essence of G'Hanir Removed)",
   "tags": [ "druid", "restoration" ],
-  "show": true,
-  "eventType": "debuff",
+  "show": false,
+  "eventType": "removedebuff",
   "friendly": true,
   "filter": {
     "type": "removebuff",
@@ -129,7 +123,6 @@
     }
   }
 },
-
 {
     "id": "FL",
     "name": "Flourish",
@@ -142,13 +135,68 @@
         "id": 197721
       }
     }
-  },
-
+  },  
+  {
+  "id": "C1",
+  "name": "Clearcasting",
+  "tags": [ "druid", "restoration" ],
+  "show": false,
+  "eventType": "debuff",
+  "friendly": true,
+  "filter": {
+    "type": "applybuff",
+    "ability": {
+      "id": 16870
+    }
+  }
+},
+{
+  "id": "C2",
+  "name": "Clearcasting (Removed)",
+  "tags": [ "druid", "restoration" ],
+  "show": false,
+  "eventType": "removedebuff",
+  "friendly": true,
+  "filter": {
+    "type": "removebuff",
+    "ability": {
+      "id": 16870
+    }
+  }
+},
+{
+  "id": "T1",
+  "name": "Incarnation: Tree of Life",
+  "tags": [ "druid", "restoration" ],
+  "show": true,
+  "eventType": "debuff",
+  "friendly": true,
+  "filter": {
+    "type": "applybuff",
+    "ability": {
+      "id": 33891
+    }
+  }
+},
+{
+  "id": "T2",
+  "name": "Incarnation: Tree of Life (Removed)",
+  "tags": [ "druid", "restoration" ],
+  "show": false,
+  "eventType": "removedebuff",
+  "friendly": true,
+  "filter": {
+    "type": "removebuff",
+    "ability": {
+      "id": 33891
+    }
+  }
+},
 {
     "id": "EF",
     "name": "Efflorescence",
     "tags": [ "druid", "restoration" ],
-    "show": true,
+    "show": false,
     "eventType": "ability",
     "filter": {
       "type": "cast",
